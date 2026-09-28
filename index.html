@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#efe7dc">
+  <meta name="description" content="Invitación de matrimonio de Alfredo y Nancy — 24 de octubre de 2026.">
+  <title>Alfredo + Nancy · Nos Casamos</title>
+  <link rel="stylesheet" href="style.css?v=33">
+</head>
+<body>
+  <div id="fallingPetals" class="falling-petals" aria-hidden="true"></div>
+
+  <!-- APERTURA -->
+  <div id="envelope" class="envelope-screen" aria-label="Abrir invitación">
+    <div class="envelope-scene">
+      <div class="envelope" id="envelopeCard">
+        <div class="envelope-back"></div>
+        <div class="envelope-paper"><span>ALFREDO + NANCY</span></div>
+        <div class="envelope-flap"></div>
+        <div class="envelope-front"></div>
+        <button id="openBtn" class="seal" aria-label="Abrir invitación">
+          <img src="assets/boton-AN.png" alt="Sello AN">
+        </button>
+      </div>
+      <p class="tap">TOCA EL SELLO PARA ABRIR</p>
+    </div>
+  </div>
+
+  <main id="invitation" class="invitation" aria-hidden="true">
+    <section class="hero reveal reveal-hero">
+            <img src="assets/monograma-AN.png" class="monogram hero-monogram" alt="Monograma A N">
+      <p class="eyebrow">NOS CASAMOS</p>
+      <h1>Alfredo <em>+</em> Nancy</h1>
+      <p class="hero-date">24 · OCTUBRE · 2026</p>
+      <p class="hero-copy">“Dos caminos que se encontraron, dos corazones que eligieron caminar juntos y un amor que hoy comienza para siempre.”</p>
+    </section>
+
+    <section class="countdown-intro reveal">
+      <p class="countdown-title">LA CUENTA REGRESIVA<br>PARA NUESTRA BODA HA<br>COMENZADO</p>
+      <div class="date-row">
+        <span class="date-side">SÁBADO</span>
+        <div class="date-circle"><small>AREQUIPA</small><b>24</b><span>OCTUBRE</span><small>2026</small></div>
+        <span class="date-side">OCTUBRE</span>
+      </div>
+      <p class="solo-faltan">SOLO FALTAN</p>
+      <div id="countdown" class="countdown" aria-live="polite">
+        <div><strong id="days">--</strong><span>DÍAS</span></div>
+        <div><strong id="hours">--</strong><span>HORAS</span></div>
+        <div><strong id="minutes">--</strong><span>MINUTOS</span></div>
+        <div><strong id="seconds">--</strong><span>SEGUNDOS</span></div>
+      </div>
+    </section>
+
+
+    <section class="section intro reveal">
+      <p class="intro-lead">Con la bendición de Dios y el amor de nuestros padres</p>
+      <div class="parents">
+        <div><strong>Filomena Medina Salhua</strong><strong>Demetrio Mamani Humalla</strong></div>
+        <div><strong>Eduardo Apaza Rojas</strong><strong>Juana Huayta de Apaza</strong></div>
+      </div>
+      <p class="invite-text">Nos complace invitarte a nuestro matrimonio religioso y civil.</p>
+    </section>
+
+    <!-- DETALLE DE CEREMONIAS -->
+    <section class="ceremony-details reveal">
+      <div class="ceremony-table-art"><img src="assets/mesa.png" alt="Mesa decorada"></div>
+      <h2>LA CEREMONIA</h2>
+
+      <article class="ceremony-block">
+        <p class="ceremony-kicker">CEREMONIA RELIGIOSA</p>
+        <div class="ceremony-info">
+          <time>09:00 AM</time>
+          <div class="ceremony-text">
+            <h3>Nuestra Señora de la Asunta</h3>
+            <p>Zamácola · Arequipa</p>
+            <a class="location-button" href="https://maps.app.goo.gl/HH6mH9pNjfvviAHj8" target="_blank" rel="noopener">VER UBICACIÓN</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="ceremony-block">
+        <p class="ceremony-kicker">CEREMONIA CIVIL</p>
+        <div class="ceremony-info">
+          <time>01:30 PM</time>
+          <div class="ceremony-text">
+            <h3>Salón de eventos SUMAC RAYMI</h3>
+            <p>Asociación Hernán Bedoya Forja J Etapa Mz D Lote 4 · Cerro Colorado</p>
+            <a class="location-button" href="https://maps.app.goo.gl/4YLub114CNhK98rCA" target="_blank" rel="noopener">VER UBICACIÓN</a>
+          </div>
+        </div>
+      </article>
+
+      <p class="early-light">Agradecemos llegar 15 minutos antes para el inicio puntual.</p>
+    </section>
+
+    <!-- ITINERARIO RESUMIDO -->
+    <section class="section itinerary-section">
+      <div class="section-title reveal"><span class="mini-line"></span><p>ITINERARIO</p><span class="mini-line"></span></div>
+      <div class="timeline">
+        <article class="event event-left reveal">
+          <div class="event-content itinerary-simple">
+            <div class="line-icon"><img src="assets/ceremonia-religiosa.png" alt="Ceremonia religiosa"></div>
+            <p class="itinerary-label">CEREMONIA RELIGIOSA</p>
+            <time>09:00 AM</time>
+          </div><span class="timeline-dot"></span>
+        </article>
+
+        <article class="event event-right reveal">
+          <div class="event-content itinerary-simple">
+            <div class="line-icon"><img src="assets/boda-civil.png" alt="Boda civil"></div>
+            <p class="itinerary-label">CEREMONIA CIVIL</p>
+            <time>01:30 PM</time>
+          </div><span class="timeline-dot"></span>
+        </article>
+
+        <article class="event event-left reveal">
+          <div class="event-content itinerary-reception">
+            <div class="line-icon icon-table"><img src="assets/mesa.png" alt="Recepción"></div>
+            <p class="event-kicker">RECEPCIÓN</p>
+            <div class="event-rule"></div>
+            <p>Celebramos juntos este día tan especial.</p>
+            <p>Referencia: espaldas del aeropuerto</p>
+          </div><span class="timeline-dot"></span>
+        </article>
+      </div>
+    </section>
+
+    <section class="details-wrap">
+      <div class="details-grid">
+        <article class="detail-card reveal">
+          <div class="line-icon large"><img src="assets/mesa.png" alt="Mesa decorada"></div>
+          <p class="detail-kicker">RECEPCIÓN</p>
+          <h2>Una mesa, muchas historias</h2>
+          <p>Queremos compartir este día rodeados de las personas que forman parte de nuestra historia.</p>
+        </article>
+        <article class="detail-card reveal">
+          <div class="line-icon large"><img src="assets/traje-etiqueta.png" alt="Vestido y terno"></div>
+          <p class="detail-kicker">VESTIMENTA</p>
+          <h2>Traje de etiqueta</h2>
+          <p>Un pequeño detalle para acompañar la elegancia de esta celebración.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section godparents reveal">
+      <div class="section-title"><span class="mini-line"></span><p>PADRINOS</p><span class="mini-line"></span></div>
+      <div class="god-grid">
+        <div><span>PADRINOS RELIGIOSO</span><strong>Jorge Antonio Soto Chuctaya</strong><strong>Soledad Elvira Laura Huamani</strong></div>
+        <div><span>PADRINOS CIVIL</span><strong>Ernesto Alcca Monterola</strong><strong>Yolanda Quispe Ramos</strong></div>
+      </div>
+    </section>
+
+    <section class="photo-complete reveal"><img src="assets/foto-final.png" alt="Alfredo y Nancy juntos"></section>
+
+    <section class="next-day reveal" style="width:100%;max-width:none;margin:0;padding:14px 24px 8px;text-align:center;background:var(--paper);display:flex;flex-direction:column;align-items:center;box-sizing:border-box;">
+      <p class="next-day-date" style="display:block;width:auto;max-width:100%;margin:0 auto 7px;text-align:center;font-family:Montserrat,Arial,sans-serif;font-size:13px;line-height:1.35;letter-spacing:.06em;font-weight:400;color:#81766d;">DOMINGO · 25 · OCTUBRE · 2026</p>
+      <p class="next-day-copy" style="display:block;width:auto;max-width:620px;margin:0 auto;text-align:center;font-family:Montserrat,Arial,sans-serif;font-size:13px;line-height:1.5;letter-spacing:0;font-weight:400;color:#81766d;">Al día siguiente continuamos la celebración junto a nuestra familia y seres queridos.</p>
+    </section>
+
+    <section class="section closing reveal" style="min-height:0;height:auto;padding:38px 24px 36px;display:flex;flex-direction:column;justify-content:flex-start;align-items:center;text-align:center;box-sizing:border-box;">
+      <img src="assets/monograma-AN.png" class="monogram small" alt="Monograma A N" style="width:72px;max-height:60px;">
+      <h2 style="font-size:22px;line-height:1.15;font-weight:500;margin:10px 0 0;text-align:center;">Gracias por acompañarnos</h2>
+      <p class="closing-names" style="font-size:16px;line-height:1.25;margin:3px 0 20px;text-align:center;">Alfredo + Nancy</p>
+      <div class="personal-note"><span class="tiny-line"></span><p>Esta invitación es personal.<br>Agradecemos no reenviarla.</p><span class="tiny-line"></span></div>
+      <p class="made">Desarrollado por <strong>AKREATIVE</strong></p>
+    </section>
+
+  </main>
+
+  <audio id="music" src="assets/musica.mp3" preload="auto" loop></audio>
+  <script src="script.js?v=32?v=31"></script>
+</body>
+</html>
