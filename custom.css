@@ -23,6 +23,18 @@
 .personal-note{font-size:10px;line-height:1.75}
 .personal-note .tiny-line{width:40px}
 
+/* ITINERARIO — icono, texto y hora centrados en cada lado */
+.itinerary-section .event{display:flex;justify-content:center!important;text-align:center!important}
+.itinerary-section .event-content{width:100%;max-width:230px;margin:0 auto!important;display:flex;flex-direction:column;align-items:center;text-align:center}
+.itinerary-section .line-icon{width:100%;height:86px;display:flex;align-items:center;justify-content:center}
+.itinerary-section .line-icon img{margin:0 auto}
+.itinerary-section .itinerary-label,
+.itinerary-section .event-kicker{width:100%;text-align:center;margin:7px 0 4px!important}
+.itinerary-section .event time{display:block;width:100%;text-align:center;margin:0!important;font-size:10px;letter-spacing:.08em}
+.itinerary-section .event-rule,
+.itinerary-section .event-content>p:not(.itinerary-label):not(.event-kicker){display:none}
+.itinerary-section .icon-table img{height:76px}
+
 @media(max-width:620px){
   .swipe-hint{margin-top:28px;font-size:7px}
   .swipe-hand{font-size:20px}
@@ -32,4 +44,6 @@
   .next-day-title{font-size:19px}
   .next-day-date{font-size:12px}
   .next-day-date strong{font-size:17px}
+  .itinerary-section .event{padding-left:12px;padding-right:12px}
+  .itinerary-section .event-content{max-width:190px}
 }
