@@ -20,8 +20,6 @@ openBtn.addEventListener('click', () => {
     invitation.setAttribute('aria-hidden', 'false');
   }, 430);
 
-  // Los pétalos empiezan cuando el sobre ya salió, para que caigan
-  // únicamente sobre la invitación y nunca sobre la apertura.
   setTimeout(() => {
     if (fallingPetals) fallingPetals.classList.add('active');
   }, 1100);
@@ -82,7 +80,6 @@ if (fallingPetals) {
     petal.draggable = false;
     petal.setAttribute('aria-hidden', 'true');
 
-    // Pequeños, pero visibles sobre la tarjeta.
     const size = rand(14, 26);
     const mobileSize = rand(11, 20);
     const duration = rand(18, 29);
@@ -121,51 +118,3 @@ if (fallingPetals) {
     fallingPetals.appendChild(petal);
   }
 }
-
-// FOTOS NUEVAS — se integran sin tocar el resto de la invitación.
-// FOTO ARRIBA: imagen completa que se desvanece hacia el mismo tono del itinerario.
-// FOTO ABAJO: reemplaza la foto final anterior.
-(function integrateNewPhotos(){
-  const itinerary = document.querySelector('.itinerary-section');
-  if (itinerary && !document.querySelector('.new-photo-above')) {
-    const section = document.createElement('section');
-    section.className = 'new-photo-above';
-    section.setAttribute('aria-label', 'Fotografía de Alfredo y Nancy');
-    section.innerHTML = `
-      <div class="new-photo-image">
-        <img src="assets/FOTO ARRIBA.jpg" alt="Alfredo y Nancy frente al mar">
-        <div class="new-photo-fade" aria-hidden="true"></div>
-        <div class="new-photo-caption">
-          <div class="section-title">
-            <span class="mini-line"></span>
-            <p>ITINERARIO</p>
-            <span class="mini-line"></span>
-          </div>
-        </div>
-      </div>`;
-    itinerary.parentNode.insertBefore(section, itinerary);
-  }
-
-  const bottomPhoto = document.querySelector('.photo-complete img');
-  if (bottomPhoto) {
-    bottomPhoto.src = 'assets/FOTO ABAJO.jpg';
-    bottomPhoto.alt = 'Alfredo y Nancy celebrando juntos';
-  }
-
-  if (!document.getElementById('newPhotoStyles')) {
-    const style = document.createElement('style');
-    style.id = 'newPhotoStyles';
-    style.textContent = `
-      .new-photo-above{position:relative;background:#ad9587;overflow:hidden;line-height:0;isolation:isolate}
-      .new-photo-image{position:relative;width:100%;overflow:hidden;aspect-ratio:1.7778/1;background:#ad9587}
-      .new-photo-image>img{display:block;width:100%;height:100%;object-fit:cover;object-position:center top}
-      .new-photo-fade{position:absolute;inset:0;z-index:2;pointer-events:none;background:linear-gradient(180deg,rgba(173,149,135,0) 45%,rgba(173,149,135,.18) 58%,rgba(173,149,135,.58) 75%,#ad9587 100%)}
-      .new-photo-caption{position:absolute;z-index:3;left:0;right:0;bottom:0;padding:0 24px 18px}
-      .new-photo-caption .section-title{margin:0;gap:14px}
-      .new-photo-caption .section-title p{margin:0;color:#fff7ef;font-size:10px;letter-spacing:.23em}
-      .new-photo-caption .mini-line{background:rgba(255,247,239,.75)}
-      @media(max-width:520px){.new-photo-image{aspect-ratio:1.55/1}.new-photo-fade{background:linear-gradient(180deg,rgba(173,149,135,0) 38%,rgba(173,149,135,.18) 52%,rgba(173,149,135,.64) 72%,#ad9587 100%)}.new-photo-caption{padding-bottom:14px}}
-    `;
-    document.head.appendChild(style);
-  }
-})();
