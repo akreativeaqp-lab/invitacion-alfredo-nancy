@@ -5,6 +5,9 @@
 .hero-names-image{display:block;width:min(78vw,310px);height:auto;max-height:92px;object-fit:contain;margin:0 auto 0}
 .invitation.show .hero-names-image{animation:softTextIn 1.85s ease .55s both}
 
+/* PORTADA — mantener Alfredo + Nancy como texto original; solo el + en tono crema */
+.hero h1 em{color:#cbb8a8;font-style:normal}
+
 /* EVITAR EL PEQUEÑO REENCUADRE/PARPADEO AL ABRIR EL SOBRE:
    la invitación permanece estable detrás de la pantalla del sobre */
 .invitation{opacity:1!important;transform:none!important;filter:none!important;transition:none!important}
@@ -34,7 +37,8 @@
 .personal-note{font-size:10px;line-height:1.75}
 .personal-note .tiny-line{width:40px}
 
-.closing-names-image{display:block;width:min(62vw,230px);height:auto;max-height:90px;object-fit:contain;margin:12px auto 4px}
+/* PNG final de nombres: más sutil, sin cambiar tamaño ni posición */
+.closing-names-image{display:block;width:min(62vw,230px);height:auto;max-height:90px;object-fit:contain;margin:12px auto 4px;opacity:.62}
 
 /* ITINERARIO — icono, texto y hora centrados en cada lado */
 .itinerary-section .event{display:flex;justify-content:center!important;text-align:center!important}
@@ -60,5 +64,5 @@
   .next-day-date strong{font-size:17px}
   .itinerary-section .event{padding-left:12px;padding-right:12px}
   .itinerary-section .event-content{max-width:190px}
-  .closing-names-image{width:min(68vw,220px)}
+  .closing-names-image{width:min(68vw,220px);opacity:.62}
 }
