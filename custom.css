@@ -18,7 +18,9 @@
 @keyframes handUp{0%,100%{transform:translateY(5px);opacity:.55}50%{transform:translateY(-4px);opacity:1}}
 @keyframes swipeHint{0%,100%{opacity:.72}50%{opacity:1}}
 
-.date-circle b{font-size:40px;margin:2px 0 3px;font-weight:500}
+/* FECHA DEL CÍRCULO — 24 protagonista y 2026 debajo; sin OCTUBRE dentro */
+.date-circle b{font-size:52px;line-height:1;margin:0 0 2px;font-weight:500}
+.date-circle small{font-size:8px;line-height:1.1;letter-spacing:.08em}
 
 .itinerary-label{font-size:10px!important;letter-spacing:.08em;color:rgba(255,247,239,.96)!important;margin:5px 0!important}
 
@@ -56,7 +58,8 @@
   .hero-names-image{width:min(82vw,290px);max-height:88px}
   .swipe-hint{margin-top:28px;font-size:7px}
   .swipe-hand{font-size:20px}
-  .date-circle b{font-size:37px}
+  .date-circle b{font-size:48px}
+  .date-circle small{font-size:7px}
   .rsvp-text{padding:46px 20px 42px}
   .next-day{padding:46px 20px 44px}
   .next-day-title{font-size:19px}
