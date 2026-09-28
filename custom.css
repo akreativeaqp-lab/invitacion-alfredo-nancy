@@ -1,0 +1,35 @@
+/* AJUSTES MAESTROS — Alfredo + Nancy */
+.tap{font-size:11px;font-weight:500;color:#655a51;letter-spacing:.22em}
+
+.swipe-hint{display:flex;flex-direction:column;align-items:center;gap:5px;margin-top:34px;color:#897b70;font-family:Montserrat,Arial,sans-serif;font-size:8px;font-weight:500;letter-spacing:.22em;animation:swipeHint 2s ease-in-out infinite}
+.swipe-hand{font-size:22px;line-height:1;color:#a98e7f;display:block;animation:handUp 1.7s ease-in-out infinite}
+@keyframes handUp{0%,100%{transform:translateY(5px);opacity:.55}50%{transform:translateY(-4px);opacity:1}}
+@keyframes swipeHint{0%,100%{opacity:.72}50%{opacity:1}}
+
+.date-circle b{font-size:40px;margin:2px 0 3px;font-weight:500}
+
+.itinerary-label{font-size:10px!important;letter-spacing:.08em;color:rgba(255,247,239,.96)!important;margin:5px 0!important}
+
+.rsvp-text{background:#f4eee6;text-align:center;padding:54px 24px 48px}
+.rsvp-text .section-kicker{font-size:10px;letter-spacing:.23em;color:#a78d7f;font-weight:500;margin:0 0 12px}
+.rsvp-text>p:last-child{font-family:"Cormorant Garamond",serif;font-size:19px;color:#7f695d;margin:0}
+
+.next-day{width:100%;max-width:none;margin:0;padding:52px 24px 50px;text-align:center;background:var(--paper);display:flex;flex-direction:column;align-items:center;box-sizing:border-box}
+.next-day-title{margin:0 0 12px;font-family:"Cormorant Garamond",serif;font-size:21px;line-height:1.2;letter-spacing:.08em;color:#a78d7f;font-weight:600}
+.next-day-date{margin:0 0 9px;font-family:Montserrat,Arial,sans-serif;font-size:14px;line-height:1.35;letter-spacing:.08em;color:#71655d;font-weight:500}
+.next-day-date strong{font-size:18px;color:#695c53}
+.next-day-copy{max-width:620px;margin:0;text-align:center;font-family:Montserrat,Arial,sans-serif;font-size:13px;line-height:1.5;color:#81766d}
+
+.personal-note{font-size:10px;line-height:1.75}
+.personal-note .tiny-line{width:40px}
+
+@media(max-width:620px){
+  .swipe-hint{margin-top:28px;font-size:7px}
+  .swipe-hand{font-size:20px}
+  .date-circle b{font-size:37px}
+  .rsvp-text{padding:46px 20px 42px}
+  .next-day{padding:46px 20px 44px}
+  .next-day-title{font-size:19px}
+  .next-day-date{font-size:12px}
+  .next-day-date strong{font-size:17px}
+}
