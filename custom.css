@@ -19,10 +19,13 @@
 @keyframes swipeHint{0%,100%{opacity:.72}50%{opacity:1}}
 
 /* FECHA DEL CÍRCULO — 24 protagonista y 2026 debajo; sin OCTUBRE dentro */
-.date-circle b{font-size:52px;line-height:1;margin:0 0 2px;font-weight:500}
+.date-circle b{font-size:52px;line-height:1;margin:0 0 2px;font-weight:500;transform:translateY(-4px)}
 .date-circle small{font-size:8px;line-height:1.1;letter-spacing:.08em}
 
 .itinerary-label{font-size:10px!important;letter-spacing:.08em;color:rgba(255,247,239,.96)!important;margin:5px 0!important}
+
+/* ITINERARIO — RECEPCIÓN al mismo tamaño que los demás eventos */
+.itinerary-section .itinerary-reception .event-kicker{font-size:10px!important;line-height:1.2!important;letter-spacing:.08em!important;font-weight:500!important}
 
 .rsvp-text{background:#f4eee6;text-align:center;padding:54px 24px 48px}
 .rsvp-text .section-kicker{font-size:10px;letter-spacing:.23em;color:#a78d7f;font-weight:500;margin:0 0 12px}
@@ -58,7 +61,7 @@
   .hero-names-image{width:min(82vw,290px);max-height:88px}
   .swipe-hint{margin-top:28px;font-size:7px}
   .swipe-hand{font-size:20px}
-  .date-circle b{font-size:48px}
+  .date-circle b{font-size:48px;transform:translateY(-4px)}
   .date-circle small{font-size:7px}
   .rsvp-text{padding:46px 20px 42px}
   .next-day{padding:46px 20px 44px}
