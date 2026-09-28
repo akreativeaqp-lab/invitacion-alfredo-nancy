@@ -12,7 +12,9 @@
 
 .rsvp-text{background:#f4eee6;text-align:center;padding:54px 24px 48px}
 .rsvp-text .section-kicker{font-size:10px;letter-spacing:.23em;color:#a78d7f;font-weight:500;margin:0 0 12px}
-.rsvp-text>p:last-child{font-family:"Cormorant Garamond",serif;font-size:19px;color:#7f695d;margin:0}
+.rsvp-text>p:last-of-type{font-family:"Cormorant Garamond",serif;font-size:19px;color:#7f695d;margin:0 0 20px}
+.whatsapp-rsvp{display:inline-flex;align-items:center;justify-content:center;min-width:190px;padding:11px 20px;border:1px solid rgba(126,103,88,.34);border-radius:999px;background:#fffaf4;color:#7f695d;font-family:Montserrat,Arial,sans-serif;font-size:9px;font-weight:500;letter-spacing:.16em;text-decoration:none;transition:transform .25s ease,background .25s ease,box-shadow .25s ease}
+.whatsapp-rsvp:hover{transform:translateY(-2px);background:#fffdf9;box-shadow:0 6px 18px rgba(91,68,50,.10)}
 
 .next-day{width:100%;max-width:none;margin:0;padding:52px 24px 50px;text-align:center;background:var(--paper);display:flex;flex-direction:column;align-items:center;box-sizing:border-box}
 .next-day-title{margin:0 0 12px;font-family:"Cormorant Garamond",serif;font-size:21px;line-height:1.2;letter-spacing:.08em;color:#a78d7f;font-weight:600}
@@ -22,6 +24,8 @@
 
 .personal-note{font-size:10px;line-height:1.75}
 .personal-note .tiny-line{width:40px}
+
+.closing-names-image{display:block;width:min(62vw,230px);height:auto;max-height:90px;object-fit:contain;margin:12px auto 4px}
 
 /* ITINERARIO — icono, texto y hora centrados en cada lado */
 .itinerary-section .event{display:flex;justify-content:center!important;text-align:center!important}
@@ -46,4 +50,5 @@
   .next-day-date strong{font-size:17px}
   .itinerary-section .event{padding-left:12px;padding-right:12px}
   .itinerary-section .event-content{max-width:190px}
+  .closing-names-image{width:min(68vw,220px)}
 }
